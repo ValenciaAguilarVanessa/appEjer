@@ -1,0 +1,51 @@
+ion-content.ion-padding{
+    /*  --background: url("/assets/img/a.jpg") 0 0/100% 100% no-repeat;*/
+    --background: #ffe4e4;
+    text-align: center;
+     color: rgb(255, 255, 255);
+ }
+ 
+ 
+ 
+ ion-item.nombre{
+     color: rgb(0, 0, 0);
+ }
+ 
+ ion-item.correo{
+    
+     color: rgb(0, 0, 0);
+ }
+ 
+ ion-item.user{
+    
+     color: rgb(0, 0, 0);
+ }
+ 
+ ion-item.password{
+    
+     color: rgb(0, 0, 0);
+ }
+ 
+ 
+    ion-button{
+     margin-top: 50px;
+     text-align: center;
+     color: rgb(0, 0, 0);
+     font-size: large;
+    } 
+    .list-md {
+       border-radius: 10px;
+    }
+ 
+    .button-native::after {
+       inset: 0px;
+       position: absolute;
+       content: "";
+       opacity: 0;
+       border-radius: 100px;
+   }
+ 
+   img {
+    max-width: 100%;
+    border-radius: 20px;
+ }

@@ -1,0 +1,48 @@
+h1 {
+    margin-top: 30px;
+    font-size: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ion-content.ion-padding{
+    /*  --background: url("/assets/img/a.jpg") 0 0/100% 100% no-repeat;*/
+    text-align: center;
+     --background:#ffe4e4;
+     text-align: center;
+      color: rgb(255, 255, 255);
+ }
+ 
+ img {
+    max-width: 60%;
+}
+
+ion-item.nombre{
+    color: rgb(0, 0, 0);
+    font-size: large;
+}
+
+
+ion-item.password{
+    color: rgb(0, 0, 0);
+    font-size: large;
+}
+
+ 
+ 
+ion-button{
+    margin-top: 50px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: large;
+   } 
+   .list-md {
+      border-radius: 10px;
+   }
+
+   .button-native::after {
+      inset: 0px;
+      position: absolute;
+      content: "";
+      opacity: 0;
+      border-radius: 100px;
+  }
