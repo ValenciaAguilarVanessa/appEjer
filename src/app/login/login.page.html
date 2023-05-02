@@ -1,32 +1,43 @@
-<ion-content class="ion-padding">
-  <h1 align="center">BIENVENIDO</h1>
-  <br>
-  <img class="imagenprin" src="/assets/img/limpieza.jpg.jpeg" />
-  <br>
-  <h3 align="center">Inicia sesión o Regístrate</h3>
+<ion-content  class="ion-padding">
+  <img class="imagenprin" src="/assets/img/Abeja3.jpeg" />
+   
+   <br>
+   <br>
+   <h3 align="center">Únete a nuestra comunidad</h3>
+   
 
-  <ion-list>
-    <ion-item>
-      <ion-label position="floating">Usuario</ion-label>
-      <ion-input placeholder="Ingresa tu nombre de usuario"></ion-input>
-    </ion-item>
+   <form [formGroup]="LoginForm">
+
+    <div class="Cont" style="margin: 1em">
+      <ion-list > 
+ 
+      <!-- <ion-item class="name">
+        <ion-label position="floating">Nombre</ion-label>
+        <ion-input type="name" placeholder="Ingresa tu nombre" formControlName='name'></ion-input>
+      </ion-item> -->
   
-    <ion-item>
-      <ion-label position="floating">Contraseña</ion-label>
-      <ion-input type="password" value="password"></ion-input>
-    </ion-item>
-  
-    <!-- <ion-item>
-      <ion-label position="floating">Email</ion-label>
-      <ion-input type="email" placeholder="Ingresa tu email"></ion-input>
-    </ion-item> ¡-->
-  </ion-list> 
+      <ion-item class="email">
+        <ion-label position="floating">Correo electrónico</ion-label>
+        <ion-input type="email" placeholder="Ingresa tu correo electrónico" formControlName='email'></ion-input>
+      </ion-item>
+    
+      <ion-item class="password">
+        <ion-label position="floating">Crea una contraseña</ion-label>
+        <ion-input type="password" value="password" formControlName='password'></ion-input>
+      </ion-item>
+     
+    </ion-list>
+  </div>
 
+  <ion-button fill="clear" style="background-color: rgb(128, 185, 24);" (click)="login()">Iniciar sesión</ion-button>
+  <br>
+  <br>
+  <h3 align="center">¿Ya tienes una cuenta? <a style="color: rgb(0, 0, 0);" href="http://localhost:8100/login">Iniciar sesión</a></h3>
 
-  <br>
-  <ion-button fill="clear" style="background-color: rgb(192, 108, 119);" >Iniciar sesión</ion-button>
-  <br>
-  <h3 align="center"> <a style="color: rgb(0, 0, 0);" href="http://localhost:8100/forgot-password"> ¿Olvidaste tu contraseña?</a></h3>
-  <br>
-  <h3 align="center">¿No tienes una cuenta? <a style="color: rgb(0, 0, 0);" href="http://localhost:8100/registro">Regístrate </a></h3>
-</ion-content>
+   </form>
+ 
+   
+     
+   
+ 
+  </ion-content>

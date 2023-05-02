@@ -36,6 +36,18 @@ const routes: Routes = [
     redirectTo: 'forgot-password',
     pathMatch: 'full'
   },
+  {
+    path: 'relog',
+    loadChildren: () => import('./relog/relog.module').then( m => m.RelogPageModule)
+  },
+  {
+    path: 'menu-blog',
+    loadChildren: () => import('./menu-blog/menu-blog.module').then( m => m.MenuBlogPageModule)
+  },
+  {
+    path: 'porfile',
+    loadChildren: () => import('./users/porfile/porfile.module').then( m => m.PorfilePageModule)
+  },
 ];
 
 @NgModule({

@@ -1,38 +1,42 @@
 <ion-content  class="ion-padding">
   <!-- <img class="imagenprin" src="https://images.pexels.com/photos/4041392/pexels-photo-4041392.jpeg?auto=compress&cs=tinysrgb&w=600" /> ¡-->
-  <img class="imagenprin" src="/assets/img/WhatsApp Image 2023-02-15 at 1.31.57 PM (2).jpeg" />
+  <img class="imagenprin" src="/assets/img/Cand.png.jpeg" />
    
    <br>
    <br>
    <h3 align="center">Únete a nuestra comunidad</h3>
+   
+   
  <div class="Cont" style="margin: 1em">
-     <ion-list>
-     <ion-item class="nombre">
+     <ion-list > 
+<form [formGroup]="registerForm">
+     <!-- <ion-item class="name">
        <ion-label position="floating">Nombre</ion-label>
-       <ion-input placeholder="Ingresa tu nombre"></ion-input>
-     </ion-item>
+       <ion-input type="name" placeholder="Ingresa tu nombre" formControlName='name'></ion-input>
+     </ion-item> -->
  
-     <ion-item class="correo">
+     <ion-item class="email">
        <ion-label position="floating">Correo electrónico</ion-label>
-       <ion-input type="email" placeholder="Ingresa tu correo electrónico"></ion-input>
+       <ion-input type="email" placeholder="Ingresa tu correo electrónico" formControlName='email'></ion-input>
      </ion-item>
  
      <ion-item class="user">
        <ion-label position="floating">Nombre de usuario</ion-label>
-       <ion-input placeholder="Crea un nombre de usuario"></ion-input>
+       <ion-input class="user" placeholder="Crea un nombre de usuario" formControlName='user'></ion-input>
      </ion-item>
    
-     <ion-item class="passw">
+     <ion-item class="password">
        <ion-label position="floating">Crea una contraseña</ion-label>
-       <ion-input type="password" value="password"></ion-input>
+       <ion-input type="password" value="password" formControlName='password'></ion-input>
      </ion-item>
+    </form>
    </ion-list>
  </div>
    
      
    
  
-   <ion-button fill="clear" style="background-color: rgb(192, 108, 119);" >Registrarte</ion-button>
+   <ion-button fill="clear" style="background-color: rgb(128, 185, 24);" (click)="register()">Registrarte</ion-button>
    <br>
    <br>
    <h3 align="center">¿Ya tienes una cuenta? <a style="color: rgb(0, 0, 0);" href="http://localhost:8100/login">Iniciar sesión</a></h3>

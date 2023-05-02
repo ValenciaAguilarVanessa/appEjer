@@ -1,0 +1,113 @@
+h1 {
+    margin-top: 30px;
+    font-size: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ion-content.ion-padding{
+    /*  --background: url("/assets/img/a.jpg") 0 0/100% 100% no-repeat;*/
+    text-align: center;
+     --background:#DFFF61;
+     text-align: center;
+      color: rgb(255, 255, 255);
+ }
+ 
+ img {
+    max-width: 100%;
+}
+
+ion-item.nombre{
+    color: rgb(0, 0, 0);
+    font-size: large;
+}
+
+
+ion-item.password{
+    color: rgb(0, 0, 0);
+    font-size: large;
+}
+
+ 
+ 
+ion-button{
+    margin-top: 40px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: medium;
+   } 
+   .list-md {
+      border-radius: 10px;
+   }
+
+
+
+   .button-native::after {
+      inset: 0px;
+      position: absolute;
+      content: "";
+      opacity: 0;
+      border-radius: 100px;
+  }
+
+  h3 {
+    font-size: 22px;
+    --background:#faa6a6;;
+}
+body{
+    background-color: #fefed9;
+    font-family: 'Helvetica';
+    font-size: 16px;
+  }
+  
+  .tabla1{
+    margin-top: 1em;
+  }
+  
+  .tabla1 th, .tabla1 td{
+    text-align: center;
+    padding: .2em .5em;
+  }
+  
+  .tabla1 caption{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    margin-bottom: .5em;
+  }
+  
+  .tabla1 tr{
+    border-bottom: 1px solid black;
+  }
+  
+  .tabla2{
+    margin-top: 2em;
+  }
+  
+  .tabla2 th, .tabla2 td{
+    text-align: center;
+    padding: .2em .5em;
+    border: 1px solid black;
+  }
+  
+  .tabla2 caption{
+    text-align: left;
+    margin-bottom: 5px;
+    font-variant: small-caps;
+    font-size: 20px;
+    letter-spacing: 5px;
+  }
+  
+  .tabla2 td{
+    text-align: left;
+    font-size: .8em;
+    padding-bottom: 3em;
+    padding-right: 3em;
+  }
+  
+  .tabla2 td:hover{
+    background-color: white;
+    cursor: pointer;
+    font-size: 1.6em;
+    text-align: center;
+    padding: 0;
+  }

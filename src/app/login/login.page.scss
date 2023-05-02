@@ -7,13 +7,13 @@ h1 {
 ion-content.ion-padding{
     /*  --background: url("/assets/img/a.jpg") 0 0/100% 100% no-repeat;*/
     text-align: center;
-     --background:#ffe4e4;
+     --background:#ffff3f;
      text-align: center;
       color: rgb(255, 255, 255);
  }
  
  img {
-    max-width: 60%;
+    max-width: 50%;
 }
 
 ion-item.nombre{
@@ -30,14 +30,16 @@ ion-item.password{
  
  
 ion-button{
-    margin-top: 50px;
+    margin-top: 40px;
     text-align: center;
     color: rgb(0, 0, 0);
-    font-size: large;
+    font-size: medium;
    } 
    .list-md {
       border-radius: 10px;
    }
+
+
 
    .button-native::after {
       inset: 0px;
@@ -46,3 +48,8 @@ ion-button{
       opacity: 0;
       border-radius: 100px;
   }
+
+  h3 {
+    font-size: 22px;
+    --background:#faa6a6;;
+}
